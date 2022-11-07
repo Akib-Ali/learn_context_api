@@ -1,18 +1,23 @@
-import { useContext } from "react";
-import { AppContext } from "./appprovider";
+import { useContext } from "react"
+import { AppContext } from "./appprovider"
+
 
 export const ChildComponent=()=>{
 
-    const userData = useContext(AppContext)
+    const userdata = useContext(AppContext)
+
+    console.log(userdata)
+
+
 
     return(
         <div>
           <h3>Child Component</h3>
+          <h2>{ `Name :   ${userdata.name}`}</h2>
+          <h3>{`Age : ${userdata.age}`}</h3>
+          <h3>{`Position : ${userdata.position}`}</h3>
+          <h3>{`Salary : ${userdata.salary}`}</h3>
 
-            <h3>{`Name : ${userData.name}`}</h3>
-            <h3>{`Age : ${userData.age}`}</h3>
-            <h3>{`Position : ${userData.position}`}</h3>
-            <h3>{`Salary : ${userData.salary} Rs`}</h3>
             
         </div>
     )
