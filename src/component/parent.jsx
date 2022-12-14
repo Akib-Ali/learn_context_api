@@ -1,14 +1,13 @@
-import { ChildComponent } from "./child"
+import { Child } from "./child"
 
 export const ParentComponent=()=>{
 
-     return(
+
+    return(
 
         <div>
-            <h3>Parent Compont</h3>
-            <ChildComponent/>
+            <h3>Parent Component</h3>
+            <Child/>
         </div>
-     )
-
-
+    )
 }

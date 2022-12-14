@@ -1,14 +1,16 @@
-import { useState } from 'react'
+
 import reactLogo from './assets/react.svg'
 import './App.css'
-import { GrandParend } from './component/grandparent'
+import { GrandFather } from './component/grandfather'
 
 function App() {
   
 
   return (
     <div className="App">
-      <GrandParend/>
+    <h3>Welcome To Akib Ali</h3>
+
+    <GrandFather/>
     </div>
   )
 }
